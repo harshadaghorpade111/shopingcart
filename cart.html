@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping Cart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🛒 Your Cart</h1>
+<a href="products.html" class="back-btn">⬅ Continue Shopping</a>
+</header>
+
+<div class="cart-container">
+
+<p id="empty-msg">Your cart is empty</p>
+
+<table class="cart-table">
+
+<thead>
+<tr>
+<th>Product</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Subtotal</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="cart-items"></tbody>
+
+</table>
+
+<div class="cart-summary">
+
+<h2>Total: ₹ <span id="total">0</span></h2>
+
+<div class="cart-actions">
+<button onclick="clearCart()" class="clear">Clear Cart</button>
+<button onclick="checkout()" class="checkout">Checkout</button>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
